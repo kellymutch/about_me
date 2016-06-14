@@ -1,11 +1,16 @@
 'use strict';
 var userName = prompt('Greetings!! What is your name');
-alert ('Welcome ' + userName + ' glad you are here!');
-var answer1 = prompt('Does Sam have three cats?').toLowerCase();
+alert ('Welcome ' + userName, + ' We are going to play a guessing game');
+var answer1 = prompt(userName, + 'Is Kelly a native Seattleite?').toLowerCase();
 if (answer1 === 'yes' || answer1 === 'y') {
-  alert ('Right');
-
+  alert ('Yes, I grew up in Redmond.');
 }
 else {
-  alert ('wrong');
+  alert ('That is incorrect');
 }
+console.log (answer1);
+
+var answer2 = prompt('?').toLowerCase();
+var answer3 = prompt('?').toLowerCase();
+var answer4 = prompt('?').toLowerCase();
+var answer5 = prompt('?').toLowerCase();
