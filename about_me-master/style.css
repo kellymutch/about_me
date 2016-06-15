@@ -1,0 +1,31 @@
+html
+{height: 100%}
+
+body
+{
+  background: #F0EFE2;
+}
+
+header
+{ background: #32B804;
+  height: 240px;}
+/*below stolen from some crap site html goodies and ajusted*/
+  #menu {
+      width: 100%;
+      height: 35px;
+      font-size: 16px;
+      font-family: Arial, Geneva, sans-serif;
+      font-weight: bold;
+      text-align: center;
+      background-color: #7FCF04;
+          
+  }
+  #menu ul {
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+#menu li {
+display: inline;
+padding: 20px;
+}
