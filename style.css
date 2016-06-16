@@ -35,10 +35,18 @@ h1
 {
   font-family: Arial, Geneva, sans-serif;
   font-weight: bold;
-
 }
 .col1
 {
   width:450px;
   float:left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.col2
+{
+  width:450px;
+  float:left;
+  margin-left: 5px;
+  margin-right: 5px;
 }

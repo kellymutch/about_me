@@ -46,3 +46,53 @@ else {
   alert ('You may find me funny after a beer or two.');
 }
 console.log (answer5 + ' I am not funny');
+var correctNum = 5;// the below works on a number of tries in that it exits
+var i = 0;
+
+do {
+
+  var myNumber = parseInt (prompt('I am thinking of a number between one and ten. If you can guess that number within 4 tries, you win.'));
+  if (myNumber === correctNum) {
+    alert ('You WIN!!!!!');
+    i === 4// this doea not cause exit on win
+    console.log(i);
+  }
+// else if (i <= 4) {
+  // alert ('Too many tries, Sorry');
+// }
+  else if (myNumber > correctNum) {
+    alert ('Your number was to high');
+     i ++;
+     console.log(i);
+  }
+
+  else if (myNumber < correctNum) {
+    alert ('Your number was to low');
+    i ++ ;
+console.log(i);
+  }
+  else {
+    alert ('Please enter a number between 1 and 10');
+
+  }
+}
+
+while (i < 5) {
+
+  console.log(i)
+}
+// This is question 7 which is still just notes
+
+//var userName prompt('Greetings!! What is your name');//remove when inserting to main app.js
+//var arrayName = ['sam', 'socorro', 'sage', 'shasta', 'solo'];
+//var dogName = prompt(userName +' Please try and guess the name of one of my dogs');
+
+//loop thru arrayName
+//if dogName = true
+//then you win UserName + displayName
+//else dogName again
+//back to loop arrayName
+
+//while counting number of trys
+//if you get to 6 tries, stop and
+//var displayName = alert (' The dogs names are ' + arrayName);
