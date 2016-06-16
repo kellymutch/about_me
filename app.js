@@ -48,15 +48,29 @@ var userName = prompt('Greetings!! What is your name');
 // console.log (answer5 + (' answer to 5'));
 //
 var correctNum = 5;
-var myNumber = parseInt (prompt('I am thinking of a number between one and ten. If you can guess that number within 4 tries, you win.'));
-for (var i = 0; i <= 4; i++)
+var i = 0;
 
+while (i < 4);
+
+  var myNumber = parseInt (prompt('I am thinking of a number between one and ten. If you can guess that number within 4 tries, you win.'));
   if (myNumber === correctNum) {
     alert ('You WIN!!!!!');
+    console.log(myNumber);
   }
+else if (i === 4) {
+  alert ('Too many tries, Sorry');
+}
   else if (myNumber > correctNum) {
     alert ('Your number was to high');
+
+     i += 1;
   }
+
   else if (myNumber < correctNum) {
     alert ('Your number was to low');
+    i += 1;
+  }
+  else {
+    alert ('Please enter a number between 1 and 10');
+
   }
