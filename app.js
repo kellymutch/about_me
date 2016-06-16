@@ -52,9 +52,10 @@ var i = 0;
 do {
 
   var myNumber = parseInt (prompt('I am thinking of a number between one and ten. If you can guess that number within 4 tries, you win.'));
-  if (myNumber === correctNum) {
-    alert ('You WIN!!!!!');
-    i === 4// this doea not cause exit on win
+  if (myNumber === correctNum && i < 5) {
+    alert ('You WIN!!!!!');{
+    break
+  }              //i === 4// this doea not cause exit on win
     console.log(i);
   }
 // else if (i <= 4) {
@@ -69,18 +70,17 @@ do {
   else if (myNumber < correctNum) {
     alert ('Your number was to low');
     i ++ ;
-console.log(i);
+    console.log(i);
   }
   else {
     alert ('Please enter a number between 1 and 10');
 
   }
-}
 
-while (i < 5) {
 
-  console.log(i)
-}
+//while (i < 5) {
+
+//}
 // This is question 7 which is still just notes
 
 //var userName prompt('Greetings!! What is your name');//remove when inserting to main app.js
