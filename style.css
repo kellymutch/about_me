@@ -1,52 +1,73 @@
-html
-{height: 100%}
-
-body
-{
-  background: #F0EFE2;
+/** {
+  border-style: dotted;
+  border-width: 1px;
+  border-color: yellow;
+}*/
+html {
+  height:100%;
 }
 
-header
-{ background: #32B804;
-  height: 240px;}
+body {
+  background:#F0EFE2;
+  font-family:Arial, Geneva, sans-serif;
+}
+
+header {
+  background:#3f990f;
+  height:240px;
+}
+.name {
+  position:relative;
+  display:inline;
+  top:17px;
+}
+.branch {
+  position:relative;
+  display:inline;
+  left:563px;
+}
 /*below stolen from some crap site html goodies and ajusted*/
-#menu
-{
-  width: 100%;
-  height: 35px;
-  font-size: 16px;
-  font-family: Arial, Geneva, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  background-color: #7FCF04;
+#menu {
+  width:100%;
+  height:35px;
+  font-size:16px;
+  font-family:Arial, Geneva, sans-serif;
+  font-weight:bold;
+  text-align:center;
+  background-color #3f990f;
 }
-#menu ul
-{
-  height: auto;
-  padding: 8px 0px;
-  margin: 0px;
+
+#menu ul {
+  height:auto;
+  padding:8px 0px;
+  margin:0px;
 }
-#menu li
-{
-  display: inline;
-  padding: 20px;
+
+#menu li {
+  display:inline;
+  padding:20px;
 }
-h1
-{
-  font-family: Arial, Geneva, sans-serif;
-  font-weight: bold;
+
+h1 {
+  font-family:Arial, Geneva, sans-serif;
+  font-weight:bold;
 }
-.col1
-{
-  width:450px;
+
+.col1 {
+  width:500px;
+  border:10px;
   float:left;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left:5px;
+  margin-right:5px;
+  padding:2px;
 }
-.col2
-{
-  width:450px;
+
+.col2 {
+  width:500px;
+  border:10px;
   float:left;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left:5px;
+  margin-right:5px;
+  border-left:20px;
+  padding:5px;
 }
