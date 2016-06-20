@@ -72,32 +72,36 @@ var userName = prompt('Greetings!! What is your name');
 //     console.log(i);
 //   }
 // }
-function question7(){
-  var guess = true;
-  var arrayName = ['sam','sara','socorro','sage','shasta','solo'];
+function question7(){ //need something that will catch if same name used 2x
+  var arrayName = [' sam',' sara',' socorro',' sage',' shasta',' solo'];
   var dogName = prompt(userName + ', please try and guess the name of one of my dogs.' );
-  var m = 1;
+  var m = 0;//counter
   var correctAnswer = 0;
-  while( m < 6 && guess ){
+  while( m < 6){
     for ( var j = 0; j <= arrayName.length ; j++ ) {
       if(dogName === arrayName[j]){
-        alert('Good job!! ' + userName + '.' + ' The dogs names are ' + arrayName + '.');
-        console.log('correct dog name');
-        //guess = false;
+        //m ++;
         correctAnswer ++;
+        alert('Good job!! ' + userName + '.');
+        console.log('correct dog name');
+        console.log(m);
         console.log(correctAnswer);
       }
     }
-    if(guess){
+    if(correctAnswer === 0) {
       m ++;
       dogName = prompt(userName + ', please try and guess the name of one of my dogs.' );
       console.log('wrong dog name');
       console.log(m);
+      console.log(correctAnswer);
     }
     else {
-      if (m === 6)
-        alert(userName + ', you have exceded the maximum number of tries.');
+      m = 7;
     }
+  }
+  if(m === 6) {
+    alert(userName + ', you guessed ' + correctAnswer + ' correctly. The dogs names are ' + arrayName + '.');
+      //guess = false;
   }
 }
 //answered();
